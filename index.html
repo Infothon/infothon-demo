@@ -262,7 +262,30 @@ body .modal-content {
   height: 100px !important;
   margin: 50px;
 }
-
+.card-custom {
+            width: 8cm;
+            height: 6cm;
+            border: 4px solid white;
+            border-radius: 15px;
+            background-color: rgba(0,0,0,0.5);
+            color:white;
+        }
+        .card-img-left {
+            width: 30%;
+            object-fit: contain;
+        }
+        .card-body-custom {
+            display: flex;
+            align-items: center;
+        }
+        .card-text {
+            margin-left: 15px;
+            color: white;
+        }
+        .underline {
+        text-decoration: underline;
+        color:black;
+    }
 
   </style>
   <body>
@@ -422,36 +445,60 @@ body .modal-content {
 </div>
 <div id="sponsorship">
   <center><h1 id="cr2">Prizes</h1></center>
-  <div class="icontainer">
-    <div class="irectangle">
-      <img src="img/sponsors/prize1.png" alt="Winner">
-      <div class="itext-content">
-        <p><b>Winner:</b></p>
-        <p>- 15k cash prize</p>
-        <p>- Goodies</p>
-        <p>- Coupons</p>
+<div class="container mt-5">
+  
+  <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+          <div class="card card-custom">
+              <div class="card-body card-body-custom">
+                  <img src="img/sponsors/prize1.png" class="card-img-left" alt="Badge 1">
+                  <div>
+                      <h5 class="card-title"><u>Winner</u>:</h5>
+                      <p class="card-text"><b>- 15k cash prize</b></p>
+                      <p class="card-text"><b>- Goodies</b></p>
+                      <p class="card-text"><b>- Coupons</b></p>
+                      
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
-    <div class="irectangle">
-      <img src="img/sponsors/prize2.png" alt="1st Runner up">
-      <div class="itext-content">
-        <p><b>1st Runner up:</b></p>
-        <p>- 10k cash prize</p>
-        <p>- Goodies</p>
-        <p>- Coupons</p>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+          <div class="card card-custom">
+              <div class="card-body card-body-custom">
+                  <img src="img/sponsors/prize2.png" class="card-img-left" alt="Badge 2">
+                  <div>
+                      <h5 class="card-title"><u>1st Runner up</u>:</h5>
+                      <p class="card-text"><b>- 10k cash prize</b></p>
+                      <p class="card-text"><b>- Goodies</b></p>
+                      <p class="card-text"><b>- Coupons</b></p>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
-    <div class="irectangle">
-      <img src="img/sponsors/prize3.png" alt="2nd Runner up">
-      <div class="itext-content">
-        <p><b>2nd Runner up:</b></p>
-        <p>- 5k cash prize</p>
-        <p>- Goodies</p>
-        <p>- Coupons</p>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+          <div class="card card-custom">
+              <div class="card-body card-body-custom">
+                  <img src="img/sponsors/prize3.png" class="card-img-left" alt="Badge 3">
+                  <div>
+                      <h5 class="card-title"><u>2nd Runner up</u>:</h5>
+                      <p class="card-text"><b>- 5k cash prize</b></p>
+                      <p class="card-text"><b>- Goodies</b></p>
+                      <p class="card-text"><b>- Coupons</b></p>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
   </div>
 </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 <footer class="text-center p-4 bg-dark text-white" style="font-family: 'Saira', sans-serif; background-color:#000000!important;">
   <div class="container">
       <!-- Logo and Text -->
