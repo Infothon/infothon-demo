@@ -1,3 +1,4 @@
+
 .body{
   font-family: 'Tourney', cursive;
   
@@ -60,11 +61,11 @@ background-color:rgb(255, 255, 255);
 pointer-events: auto; /* Allow button to receive pointer events */
 }
 .cursor-image {
-width: 300px;/*Adjust the width as needed */
+width: 300px; /* Adjust the width as needed */
 height: 300px; /* Adjust the height as needed */
 border-radius: 50%; /* Make the image circular */
 }
-/*
+
 .text-container {
 font-family: 'Audiowide', cursive;
 margin-top: 10px;
@@ -101,36 +102,3 @@ color: white;
     opacity: 0; /* Hide dot at 50% of the time */
   }
 }
-
-/*.icontainer {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.irectangle {
-  width: 200px; 
-  height: 350px; 
-  background-color: rgba(31, 30, 30, 0.2);
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-}
-
-.irectangle img {
-  width: 50%;
-  height: auto;
-}
-
-.itext-content {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  text-align: center;
-  font-size: 20px;
-  color: rgb(0,0,0);
-  font-family: 'Saira', sans-serif;
-  font-weight: bold;
-}*/
-
