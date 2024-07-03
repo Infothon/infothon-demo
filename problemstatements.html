@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infothon 3.0</title>
+    <link rel="icon" href="img/logo.png" type="image/icon type">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Add Quicksand and Abril Fatface fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tourney&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .nav-link{
+            color: #ffffff;
+        }
+        .nav-item :hover{
+            color: rgb(14, 13, 53);
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        /* Custom styles */
+        .card {
+            background-color: rgba(0, 0, 0, 0.4);
+            height: 6.5cm; /* Equals 5.5 centimeters */
+            font-family: 'Kode Mono', sans-serif;
+            color: white;
+        }
+        .card :hover{
+            border-color: #00cccc;
+            
+        }
+
+        .card-title {
+            font-family: 'Black Ops One', cursive;
+            color: white;
+        }
+
+        .card-footer button {
+            background-color: #53b4b4; /* Cyan */
+            color: #ffffff; /* White */
+            border: none;
+            font-family: 'Kode Mono', sans-serif;
+        }
+
+        .card-footer button:hover {
+            background-color: #00cccc; /* Darker cyan on hover */
+        }
+        .modal-content {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ffffff; /* White */
+
+        }
+        .theme{
+            text-align: center;
+            margin: 20px;
+            color: #ffffff; /* White */
+            font-family: 'Black Ops One', sans-serif;
+            font-size: 50px;
+        }
+        @media screen and (max-width: 767px) {
+            .theme-button{
+                font-size: 12px;
+            }
+            .theme{
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-color: rgba(0, 0, 0, 0.5) !important;">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="img/VVCE.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+            <img src="img/ISE.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+           
+            
+            <div class="vl"></div> <!-- Vertical line -->
+            <img src="img/logo.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+            <span class="infoton-text">INFOTHON</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <!-- Your navbar items -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" style="color: white !important;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white !important;">Problem Statements</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="front.html" style="color: white !important;">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html" style="color: white !important;">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sponsors.html" style="color: white !important;">Sponsors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faqs.html" style="color: white !important;">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" style="color: white !important;">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<div class="container">
+<br><br><br><br><br>
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active theme-button" aria-current="page" href="problemstatements.html">Theme 1 : Social Innovation</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link theme-button" href="problemstatements1.html">Theme 2 : logistics and Management</a>
+    
+  </ul>
+    <h2 class="theme">Theme 1: Social innovation</h2>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Card 1: Chat Bot -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">1. Volunteer Coordination Platform</h5>
+                    <p class="card-text">To develop a web application to manage and coordinate volunteer activities for a non-profit organization.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 1: Chat Bot Details -->
+        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal1Label"> Volunteer Coordination Platform</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Objective: To develop a web application to manage and coordinate volunteer activities for a non-profit organization.
+                        </p><br><p>Summary: As a volunteer coordinator, you need a web application that helps manage and coordinate volunteer activities to streamline volunteer recruitment, scheduling, and communication.
+                            </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: Demand Forecasting and Comparison -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">2. Job Interview Scheduling System</h5>
+                    <p class="card-text">To streamline the job interview scheduling process for students and employers through a simple web application. </p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2: Demand Forecasting and Comparison Details -->
+        <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal2Label">Job Interview Scheduling System</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Objective: To streamline the job interview scheduling process for students and employers through a simple web application. 
+                        </p><br><p>Summary: As the placement coordinator at a university, you need a web application that allows users to view available interview slots, book a slot, and receive confirmations to enhance user experience and improve placement management efficiency.
+                            </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3: Transportation and Route Planning -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">3. Military Training AR/VR System </h5>
+                    <p class="card-text">Develop an Augmented Reality (AR) or Virtual Reality (VR) system for live troop training, enhancing realism and effectiveness in military exercises.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 3: Transportation and Route Planning Details -->
+        <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal3Label">Military Training AR/VR System </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Objective: Develop an Augmented Reality (AR) or Virtual Reality (VR) system for live troop training, enhancing realism and effectiveness in military exercises.
+                        </p><br><p>Summary: The Military Training AR/VR System aims to provide immersive and realistic training experiences for troops using cutting-edge AR or VR technology. This project requires expertise in hardware and software development, content creation, and user experience design.
+                           </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4: Digital Tipping for Wait Staff -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">4. Real-Time Online Transaction Fraud Detection System </h5>
+                    <p class="card-text">Develop a real-time fraud detection system using machine learning to identify and prevent fraudulent activities in online transactions.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 4: Digital Tipping for Wait Staff Details -->
+        <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal4Label">Real-Time Online Transaction Fraud Detection System </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Objective: Develop a real-time fraud detection system using machine learning to identify and prevent fraudulent activities in online transactions. 
+                        </p><br><p>Summary: The project aims to create a sophisticated fraud detection system that monitors and analyzes online transactions in real-time. Leveraging machine learning algorithms, the system identifies suspicious activities and flags them for further investigation, helping to prevent fraudulent transactions. By continuously learning from transaction data, the system improves its accuracy and efficiency over time, providing robust protection for financial institutions and customers alike.
+                            
+                            </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5: Vehicle Booking Systems -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">5. Student Information and Performance Tracking System</h5>
+                    <p class="card-text">Develop a secure, user-friendly SIS for real-time access to attendance, grades, achievements, and counseling reports for students and parents. </p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal5">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 5: Vehicle Booking Systems Details -->
+        <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal5Label">Student Information and Performance Tracking System</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p> Objective: To develop a secure, user-friendly Student Information System (SIS) that provides students and parents with real-time access to attendance records, academic performance (CIE and SEE grades), achievements, and counseling reports.
+                        </p><br><p>Summary: EmpowerEd aims to revolutionize the way students and parents engage with academic information by creating an integrated platform that addresses key areas of student performance and well-being. Current systems often lack the seamless integration and accessibility needed for effective communication and tracking. This project seeks to fill that gap by providing a comprehensive, real-time SIS that ensures transparency, encourages student engagement
+                            </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6: Voting and Governance -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">6. Voting and Governance</h5>
+                    <p class="card-text">Develop a blockchain-based voting system that ensures secure and transparent elections, enabling decentralised governance in various organisations or communities.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal6">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 6: Patient Medicine Distribution and Management Details -->
+        <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal6Label">Voting and Governance</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Develop a blockchain-based voting system that ensures secure and transparent elections, enabling decentralised governance in various organisations or communities.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 7: Blockchain-based Charity Donation Platform -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">7. Blockchain-based Charity Donation Platform</h5>
+                    <p class="card-text">Develop a simple web3 platform for secure, transparent cryptocurrency donations to charitable causes with fund tracking.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal7">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 7: Assisting Farmers with Meteorological Data Details -->
+        <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modal7Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal7Label">Blockchain-based Charity Donation Platform</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Develop a simple web3 platform that allows users to donate cryptocurrencies to charitable causes securely and transparently, tracking the flow of funds.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 8: Blockchain-based Rewards System -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">8. Blockchain-based Rewards System</h5>
+                    <p class="card-text">Design a blockchain-based rewards system to distribute digital tokens for user activities and achievements within a platform or community.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal8">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 8: AI-Assisted Distracted Driver Detection System Details -->
+        <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="modal8Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal8Label">Blockchain-based Rewards System</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Design a rewards system that uses blockchain technology to distribute digital tokens or points to users based on their activities or achievements within a specific platform or community.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 9: Decentralized File Storage -->
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Open innovation :</h5>
+                    <p class="card-text">Develop an open-source project to improve daily life by creating tools and platforms for better healthcare, safety, and community services, ensuring accessibility and security.</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal9">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 9: Decentralized File Storage Details -->
+        <div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="modal9Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal9Label">Open innovation 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>The project will focus on leveraging open-source technologies to develop solutions like community-driven safety applications, platforms for efficient access to social services, and tools for enhancing public health and welfare. By fostering collaboration and transparency, the project aims to create scalable.</p><br>
+                        <p>Note : Use the domains 1. Web, 2. AI & ML, 3. IoT, 4. AR VR, 5. Block chain and come up with a innovative idea</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="text-center p-4 bg-dark text-white" style="font-family: 'Saira', sans-serif; background-color:#000000!important;">
+  <div class="container">
+      <!-- Logo and Text -->
+      <div class="row mb-4">
+          <div class="col-md-12">
+              <img src="img/logo.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+              <h3 class="navbar-brand mb-0">INFOTHON</h3>
+          </div>
+      </div>
+<center>
+  <div>
+      <div class="col-md-6 d-flex align-items-center justify-content-center">
+          <a href="https://instagram.com/infothon.vvce?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="text-white me-4"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="contact.html" target="_blank" class="text-white me-4"><i class="fa fa-phone fa-2x"></i></a>
+          <a href="https://x.com/InfothonIse?t=0xyudAwBVaUESRyejBsgPA&s=09" target="_blank" class="text-white"><img src="img\x-twitter.svg" alt="" style="width: 2em; height: 2em; margin-right: 14px;"></a>
+      </div><br>
+      <div class="col-md-6 d-flex align-items-center justify-content-center">
+          <a href="mailto:infothon.vvce.in" class="text-white"><i class="far fa-envelope me-2"></i>infothon@vvce.ac.in</a>
+      </div>
+  </div>
+</center>
+
+      <div class="row mt-4">
+          <div class="col">
+              <h5 class="mb-3" style="font-weight: bolder;">Useful Links</h5>
+              <ul class="list-inline">
+                  <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+                  <li class="list-inline-item"><a href="https://unstop.com/o/TRNOYpZ?lb=oDUR4wu8" class="text-white">Register</a></li>
+                  <li class="list-inline-item"><a href="faqs.html" class="text-white">FAQs</a></li>
+                  <li class="list-inline-item"><a href="contact.html" class="text-white">Contact Us</a></li>
+                  <li class="list-inline-item"><a href="front.html" class="text-white">About Us</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="row mt-3">
+          <div class="col">
+              <p class="mb-0">Copyright © INFOTHON 3.0</p>
+          </div>
+      </div>
+  </div>
+</footer>
+
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
