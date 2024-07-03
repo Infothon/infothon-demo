@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,47 +88,65 @@
             display: block;
             margin-bottom: 10px; /* Adjust as needed for spacing between items */
         }
+         .infoton-text{
+              display: none;
+        }
+        .text-line{
+              font-family: 'Tourney' !important;
+          font-weight: normal !important;
+    }
      }
 </style>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-color: rgba(0, 0, 0, 0.5) !important;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="img/logo.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
-                INFOTHON
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-color: rgba(0, 0, 0, 0.5) !important;">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="img/VVCE.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+        <img src="img/ISE.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+       
+        
+        <div class="vl"></div> <!-- Vertical line -->
+        <img src="img/logo.png" alt="Logo" width="55" height="55" class="d-inline-block align-text-top">
+        <span class="infoton-text">INFOTHON</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <!-- Your navbar items -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html" style="color: white !important;">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+              Problem Statements
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html" style="color: white !important;">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="front.html" style="color: white !important;">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://unstop.com/p/infothon-20-vidyavardhaka-college-of-engineering-mysore-850602" style="color: white !important;">Register</a>
-                    </li>
-      
-                    <li class="nav-item">
-                      <a class="nav-link" href="gallery.html" style="color: white !important;">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="sponsors.html" style="color: white !important;">Sponsors</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="faqs.html" style="color: white !important;">FAQ</a>
-                  </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html" style="color: white !important;">Contact us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-      </nav>
+            <ul class="dropdown-menu"   style="background-color: (0, 0, 0, 0.5);">
+              <li><a class="dropdown-item" href="problemstatements.html">Theme 1 : Social Innovation</a></li>
+              <li><a class="dropdown-item" href="problemstatements1.html">Theme 2 : Logistics & Management</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="front.html" style="color: white !important;">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html" style="color: white !important;">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sponsors.html" style="color: white !important;">Sponsors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faqs.html" style="color: white !important;">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" style="color: white !important;">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
     <br><br><br><br><br>
     <h5 class="org">Organized by</h5>
     <div class="organizer">
@@ -164,10 +183,6 @@
                         <h5 class="card-title" style="font-size: 0.4cm;">Prof. Manjesh R</h5>
                         <small class="text-body-secondary">Department of Information Science and Engineering</small><br>
                         <a>
-                            <img src="img\mob.png" alt="Logo" width="25" height="25" class="d-inline-block align-text-top">
-                            <small class="text-body-secondary">  90356 69473</small><br>
-                        </a>
-                        <a>
                             <img src="img/email.png" alt="Logo" width="25" height="25" class="d-inline-block align-text-top">
                             <small class="text-body-secondary">manjesh.r@vvce.ac.in</small>
                         </a>
@@ -179,10 +194,6 @@
                     <div class="card-body">
                         <h5 class="card-title" style="font-size: 0.4cm;">Prof. R Kasturi Rangan</h5>
                         <small class="text-body-secondary">Department of Information Science and Engineering</small><br>
-                        <a>
-                            <img src="img\mob.png" alt="Logo" width="25" height="25" class="d-inline-block align-text-top">
-                            <small>96323 11432 </small><br>
-                        </a>
                         <a>
                             <img src="img/email.png" alt="Logo" width="25" height="25" class="d-inline-block align-text-top">
                             <small class="text-body-secondary">rkrangan@vvce.ac.in</small>
@@ -261,7 +272,8 @@
                 <div class="card-body">
                     <h5 class="card-title" style="font-size: 0.4cm;" >Dr. Ravikumar V</h5>
                     <small class="text-body-secondary" style="font-weight: bold;">Head of the Department</small><br>
-                    <small class="text-body-secondary">Department of Information Science Engineering</small><br>
+                    <small class="text-body-secondary">Department of Information Science & Engineering</small><br>
+                     <small class="text-body-secondary">VidyaVardhaka college of Engineering</small><br>
                 </div>
             </div>
         </div>
@@ -273,7 +285,7 @@
                     <div class="card-body">
                         <h5 class="card-title" style="font-size: 0.4cm;" >Dr. B Sadashive Gowda</h5>
                         <small class="text-body-secondary" style="font-weight: bold;">Principal</small><br>
-                        <small class="text-body-secondary">Vidya Vardhaka college of Engineering</small><br>
+                        <small class="text-body-secondary">VidyaVardhaka college of Engineering</small><br>
                     </div>
                 </div>
             </div>
@@ -294,7 +306,7 @@
         <div>
             <div class="col-md-6 d-flex align-items-center justify-content-center">
                 <a href="https://instagram.com/infothon.vvce?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="text-white me-4"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="https://www.facebook.com/Infothon.2023?mibextid=rS40aB7S9Ucbxw6v" target="_blank" class="text-white me-4"><i class="fab fa-facebook-f fa-2x"></i></a>
+                <a href="contact.html" target="_blank" class="text-white me-4"><i class="fa fa-phone fa-2x"></i></a>
                 <a href="https://x.com/InfothonIse?t=0xyudAwBVaUESRyejBsgPA&s=09" target="_blank" class="text-white"><img src="img\x-twitter.svg" alt="" style="width: 2em; height: 2em; margin-right: 14px;"></a>
             </div><br>
             <div class="col-md-6 d-flex align-items-center justify-content-center">
@@ -311,7 +323,7 @@
                     <h5 class="mb-3" style="font-weight: bolder;">Useful Links</h5>
                     <ul class="list-inline">
                         <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
-                        <li class="list-inline-item"><a href="https://unstop.com/p/infothon-20-vidyavardhaka-college-of-engineering-mysore-850602" class="text-white">Register</a></li>
+                        <li class="list-inline-item"><a href="https://unstop.com/o/TRNOYpZ?lb=oDUR4wu8" class="text-white">Register</a></li>
                         <li class="list-inline-item"><a href="faqs.html" class="text-white">FAQs</a></li>
                         <li class="list-inline-item"><a href="contact.html" class="text-white">Contact Us</a></li>
                         <li class="list-inline-item"><a href="front.html" class="text-white">About Us</a></li>
